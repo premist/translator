@@ -2,3 +2,4 @@ AllCops:
   TargetRubyVersion: 2.4
   Exclude:
     - "node_modules/**/*"
+    - "vendor/bundle/**/*"
