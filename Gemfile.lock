@@ -42,17 +42,17 @@ GEM
     ast (2.3.0)
     bindex (0.5.0)
     builder (3.2.3)
-    byebug (9.0.6)
     concurrent-ruby (1.0.5)
+    dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubi (1.6.1)
     execjs (2.7.0)
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.6)
-    jbuilder (2.7.0)
-      activesupport (>= 4.2.0)
-      multi_json (>= 1.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -160,8 +160,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug
-  jbuilder (~> 2.5)
+  dotenv-rails (~> 2.2.1)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
   rails (~> 5.1.3)
