@@ -18,8 +18,15 @@ gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
 
+# Enhanced interactive shell
+gem 'pry-rails', '~> 0.3.6'
+
+# Google Cloud Translation API
+gem 'google-cloud-translate', '~> 1.0'
+
 group :development, :test do
   gem 'dotenv-rails', '~> 2.2.1'
+  gem 'rspec-rails', '~> 3.6'
   gem 'rubocop', '~> 0.49.1', require: false
 end
 

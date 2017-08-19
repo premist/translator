@@ -3,3 +3,10 @@ AllCops:
   Exclude:
     - "node_modules/**/*"
     - "vendor/bundle/**/*"
+
+Metrics/LineLength:
+  Max: 95
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
