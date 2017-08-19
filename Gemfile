@@ -19,8 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 
 group :development, :test do
-  gem 'rubocop', '~> 0.49.1', require: false
   gem 'dotenv-rails', '~> 2.2.1'
+  gem 'rubocop', '~> 0.49.1', require: false
 end
 
 group :development do
