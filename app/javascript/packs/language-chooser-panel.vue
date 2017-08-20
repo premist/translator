@@ -39,6 +39,7 @@ ul {
 button {
   width: 30px;
   height: 30px;
+  padding: 11px 0;
 
   border: 0;
   outline: 0;
@@ -47,6 +48,6 @@ button {
   background-color: #693AFF;
 
   font-size: 18px;
-  line-height: 30px;
+  line-height: 12px;
 }
 </style>
