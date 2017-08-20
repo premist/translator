@@ -1,10 +1,20 @@
-/* eslint no-console:0 */
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-//
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
+/* eslint no-console: 0 */
+// Run this example by adding <%= javascript_pack_tag 'hello_vue' %> and
+// <%= stylesheet_pack_tag 'hello_vue' %> to the head of your layout file,
+// like app/views/layouts/application.html.erb.
+// All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-console.log('Hello World from Webpacker')
+import Vue from "vue"
+import App from "./app.vue"
+import store from "./store"
+
+import "normalize.css"
+
+document.addEventListener("DOMContentLoaded", () => {
+  const app = new Vue({
+    store,
+    render: h => h(App)
+  });
+
+  app.$mount("#app");
+})

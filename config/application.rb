@@ -29,6 +29,11 @@ module Translator
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+    # Don't use session
+    config.middleware.delete ActionDispatch::Cookies
+    config.middleware.delete ActionDispatch::Session::CookieStore
+    config.middleware.delete ActionDispatch::Flash
+
     # Don't generate system test files.
     config.generators.system_tests = nil
   end

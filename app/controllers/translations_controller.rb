@@ -23,7 +23,7 @@ class TranslationsController < ApplicationController
       from: translation.from,
       to: translation.to,
       source: translation.origin,
-      translated: translation.text
+      translated: CGI.unescapeHTML(translation.text)
     }
   end
 end
