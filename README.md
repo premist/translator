@@ -1,7 +1,11 @@
 translator
 ==========
 
+[![Build Status](https://travis-ci.org/premist/translator.svg?branch=master)](https://travis-ci.org/premist/translator)
+
 Example Rails 5 application to demonstrate deployment workflow with Docker and Google App Engine. Uses [Webpacker](https://github.com/rails/webpacker) and [Vue.js](https://vuejs.org/) for frontend stack.
+
+![translator screenshot](https://user-images.githubusercontent.com/291078/29526478-ccb9bab0-86d0-11e7-8bd2-6924d6b8dbb4.png)
 
 ## Requirements
 - Ruby 2.4.1
