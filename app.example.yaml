@@ -1,0 +1,34 @@
+runtime: custom
+env: flex
+
+skip_files:
+  - .env
+  - tmp/
+  - node_module
+
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
+
+health_check:
+  enable_health_check: true
+  check_interval_sec: 10
+  timeout_sec: 5
+  unhealthy_threshold: 2
+  healthy_threshold: 2
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+  cool_down_period_sec: 120
+  cpu_utilization:
+    target_utilization: 0.8
+
+# If you want manual scaling:
+# manual_scaling:
+#   instances: 1
+
+env_variables:
+  SECRET_KEY_BASE: 'XXX'
+  GOOGLE_CLOUD_KEYFILE_JSON: '{...}'

@@ -2,7 +2,7 @@ FROM ruby:2.4.1
 
 ENV RAILS_ENV production
 ENV RAILS_LOG_TO_STDOUT true
-ENV PORT 80
+ENV PORT 8080
 
 # Serve static files via Rails to make following tutorial
 # as simple as possible. In serious production environment,
@@ -33,6 +33,6 @@ RUN apt-get update && apt-get install -y nodejs yarn \
   && yarn install && rake assets:precompile && apt-get remove -y yarn nodejs \
   && apt-get clean && rm -rf node_modules
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["./bin/rails", "server"]

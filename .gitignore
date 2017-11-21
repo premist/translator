@@ -22,3 +22,6 @@
 
 # Ignore local dotenv file
 .env
+
+# Ignore app.yaml
+app.yaml
